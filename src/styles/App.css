@@ -5,9 +5,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height:1.6;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  background: linear-gradient(to right, #f8f9fa, #937a0a);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
 }
