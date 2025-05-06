@@ -3,11 +3,11 @@ import Header from './components/Header';
 import Home from './sections/Home';
 import About from './sections/About';
 import Skills from './sections/Skills';
-// import Education from './sections/Education';
-// import Certifications from './sections/Certifications';
-// import Experience from './sections/Experience';
-// import HobbiesAndLanguages from './sections/Hobbies';
-// import Contact from './sections/Contact';
+import Education from './sections/Education';
+import Certifications from './sections/Certifications';
+import Experience from './sections/Experience';
+import HobbiesAndLanguages from './sections/Hobbies';
+import Contact from './sections/Contact';
 
 
 function App() {
@@ -17,15 +17,11 @@ function App() {
       <Home />
       <About />
       <Skills />
-      {/*
-      
-      
       <Education />
       <Certifications />
       <Experience />
       <HobbiesAndLanguages /> 
-      <Contact/>*/}
-      
+      <Contact/>  
     </div>
   );
 }

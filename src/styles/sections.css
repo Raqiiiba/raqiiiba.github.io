@@ -1,4 +1,4 @@
-/* Home section */
+/* Home */
 .home-banner {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -51,6 +51,7 @@
     max-width: auto; 
     border-radius: 15px; 
     }
+
 /* About */
 .about-section {
     padding: 4rem 2rem;
@@ -62,14 +63,14 @@
   }
   .about-section__content {
     position: relative;
-    z-index: 1; /* Ensures content is above the video */
-    color: #050505; /* Adjust text color for readability */
+    z-index: 1;
+    color: #050505; 
     text-align: center;
   }
   .about-section__title {
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    /* text-align: center; */
+   
   }
   
   .about-section__summary {
@@ -117,24 +118,292 @@
     font-size: 1rem;
     text-align: center;
   }
-/*Education*/
-/*Certification*/
-/*Experience*/
-/*Contact*/
 
+/*Education*/
+.education-section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .education-section__title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .education-section__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .education-section__item {
+    padding: 1.5rem 1rem;
+    border-left: 3px solid #1e1e50;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .education-section__item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 1.5rem;
+    width: 12px;
+    height: 12px;
+    background: #1e1e50;
+    border-radius: 50%;
+  }
+  
+  .education-section__degree {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem;
+  }
+  
+  .education-section__details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .education-section__institution {
+    font-style: italic;
+  }
+  
+  .education-section__dates {
+    white-space: nowrap;
+  }
+
+/*Certification*/
+.certs-section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .certs-section__title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .certs-section__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .certs-section__item {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .certs-section__name {
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem;
+  }
+  
+  .certs-section__meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .certs-section__issuer {
+    font-style: italic;
+  }
+  
+  .certs-section__period {
+    white-space: nowrap;
+  }
+  
+/*Experience*/
+.experience-section {
+    padding: 4rem 2rem;
+    max-width: 1200px; 
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .experience-section__title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    grid-column: 1 / -1; 
+  }
+  
+  .experience-section__item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .experience-section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .experience-section__role {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #232222;
+  }
+  
+  .experience-section__dates {
+    font-size: 0.95rem;
+    color: #555;
+    white-space: nowrap;
+  }
+  
+  .experience-section__company {
+    font-style: italic;
+    color: #2e2e2e;
+    margin-bottom: 1rem;
+  }
+  
+  .experience-section__duties {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .experience-section__duties li {
+    font-size: 0.9rem;
+    color: #292929;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Hobbies and languages */
+  .hobbies-languages-section {
+    padding: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .hobbies-languages-section__title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .hobbies-languages-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem; 
+    align-items: center;
+  }
+  .hobbies-languages-content {
+    background-color: transparent;
+    border:none;
+    padding: 1.5rem; 
+  }
+  .hobbies-section__title, .languages-section__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  .hobbies-section__list, .languages-section__list {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+  }
+  .hobbies-section__item, .languages-section__item {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 0.5rem;
+  }
+  .languages-section__name {
+    font-weight: bold;
+  }
+  .languages-section__level {
+    margin-left: 0.5rem;
+    color: #666;
+  }
+  .hL_img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+
+/*Contact*/
+.Contact {
+    color: #fafafa;
+    background: transparent;
+    border-top-right-radius:70px;
+    padding: 4rem 2rem;
+    text-align: center;
+    bottom: 0;
+    border: 0.5px solid white;
+  }
+  .Contact__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .Contact__form {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+  }
+  .Contact__input,
+  .Contact__textarea {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+  }
+  .Contact__input:focus,
+  .Contact__textarea:focus {
+    outline: 2px solid #000000;
+  }
+  .Contact__button {
+    padding: 0.75rem 1.5rem;
+    background: #aca518;
+    border: none;
+    width: 60%;
+    align-self: center;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .Contact__button:hover {
+    background-color: rgb(222, 222, 103);
+    transform: scale(1.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    color: #00000066;
+  }
+  .Contact__credit {
+    font-size: 0.85rem;
+    color: #494848;
+  }
+  
 
 
 
 
 
   
-    /* Responsive */
-@media (max-width: 768px) {
+    /*-----------------------------------------------Responsive----------------------------------------------------------------------------------------------------- */
+
+
+
+    @media (max-width: 768px) {
     /* Home */
     .home-banner {
       display: flex;
       text-align: center;
-      height: 30vh;
+      height: 50vh;
       border-radius: 17px;
       gap: 2rem;
       background: url(../assets/images/img1.jpg) no-repeat center center/cover;
@@ -162,9 +431,28 @@
         padding: 3rem 1rem;
       }
 
-    /* Skills */
-    /* Education*/
-    /* Certification */
     /* Experience */
+    .experience-section {
+        grid-template-columns: 1fr; 
+      }
+    
+    .experience-section__header {
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+
+    /* Hobbies & Lang*/    
+    .hobbies-languages-grid {
+          grid-template-columns: 1fr; 
+        }
+      
+   .img {
+          max-width: 100%; 
+        }  
+
     /* Contact */
+    .Contact__button {
+        width: 100%; 
+      
+    }
   }    

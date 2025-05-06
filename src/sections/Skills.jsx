@@ -1,4 +1,3 @@
-// src/components/Skills.js
 import React from 'react';
 import '../styles/sections.css';
 
