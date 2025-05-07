@@ -20,7 +20,7 @@ export default function Home() {
       >
         <h1 className="home-banner__greeting">Hi, I’m Raqiiba</h1>
         <p className="home-banner__subtitle">A Data Analyst & Facilitator</p>
-        <a href="../../public/Raqiiba_Issahaku_CV.pdf" className="home-banner__cta">
+        <a href="/Raqiiba_Issahaku_CV.pdf" target="_blank" rel="noopener noreferrer" className="home-banner__cta">
           View Resume
         </a>
       </motion.div>

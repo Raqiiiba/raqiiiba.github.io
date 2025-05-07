@@ -16,7 +16,7 @@ const languages = [
 
 export default function HobbiesAndLanguages() {
   return (
-    <section id="hobbies-languages" className="hobbies-languages-section">
+    <section id="hobbies" className="hobbies-languages-section">
       <h2 className="hobbies-languages-section__title">Hobbies & Languages</h2>
       <div className="hobbies-languages-grid">
         

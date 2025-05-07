@@ -49,7 +49,9 @@
   .home-banner__video {
     width: 100%;
     max-width: auto; 
-    border-radius: 15px; 
+    border-radius: 15px;
+    object-fit: cover; 
+    height: auto;
     }
 
 /* About */
