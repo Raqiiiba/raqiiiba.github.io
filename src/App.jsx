@@ -8,6 +8,9 @@ import Certifications from './sections/Certifications';
 import Experience from './sections/Experience';
 import HobbiesAndLanguages from './sections/Hobbies';
 import Contact from './sections/Contact';
+import Projects from './sections/Projects.jsx';
+
+
 
 
 function App() {
@@ -20,6 +23,7 @@ function App() {
       <Education />
       <Certifications />
       <Experience />
+      <Projects />
       <HobbiesAndLanguages /> 
       <Contact/>  
     </div>

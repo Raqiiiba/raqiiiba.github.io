@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import '../styles/components.css'; 
 
+
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
@@ -9,7 +10,13 @@ const Header = () => {
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
+    if (!isSidebarOpen) {
+      document.body.style.overflow = 'hidden'; // Disable scrolling
+    } else {
+      document.body.style.overflow = 'auto'; 
+    }
   };
+  
 
   // Closes the sidebar when switching to a larger screen
   useEffect(() => {
@@ -58,13 +65,14 @@ const Header = () => {
         <a href="#education">Education</a>
         <a href="#certifications">Certifications</a>
         <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="#hobbies">Hobbies</a>
         <a href="#contact">Contact</a>
       </nav>
 
       {/* Sidebar toggle button  */}
       <button className="navbar__toggle" onClick={toggleSidebar}>
-        {isSidebarOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+        {isSidebarOpen ? <FaTimes size={24} /> : <FaBars size={24} />} 
       </button>
 
       {/* Sidebar */}
@@ -74,6 +82,7 @@ const Header = () => {
         <a href="#education" onClick={toggleSidebar}>Education</a>
         <a href="#certifications" onClick={toggleSidebar}>Certifications</a>
         <a href="#experience" onClick={toggleSidebar}>Experience</a>
+        <a href="#projects" onClick={toggleSidebar}>Projects</a>
         <a href="#hobbies" onClick={toggleSidebar}>Hobbies</a>
         <a href="#contact" onClick={toggleSidebar}>Contact</a>
       </div>

@@ -285,6 +285,66 @@
     color: #292929;
     margin-bottom: 0.5rem;
   }
+  /* Projects */
+  .projects {
+    padding: 4rem 2rem;
+    background: transparent;
+    text-align: center;
+  }
+  
+  .projects-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .project-card {
+    background-color: transparent;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .project-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #1e1e1e;
+  }
+  
+  .project-description {
+    font-size: 0.95rem;
+    color: #272626;
+    margin-bottom: 1rem;
+  }
+  
+  .project-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #e8e3d7;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-link:hover {
+    background-color: #cfd389;
+  }
+  
 
   /* Hobbies and languages */
   .hobbies-languages-section {
@@ -342,10 +402,11 @@
     color: #fafafa;
     background: transparent;
     border-top-right-radius:70px;
+    border-top-left-radius:70px;
     padding: 4rem 2rem;
     text-align: center;
     bottom: 0;
-    border: 0.5px solid white;
+    border: 1px solid #b59f3a;
   }
   .Contact__title {
     font-size: 2rem;
@@ -367,7 +428,7 @@
   }
   .Contact__input:focus,
   .Contact__textarea:focus {
-    outline: 2px solid #000000;
+    outline: 2px solid #816c06;
   }
   .Contact__button {
     padding: 0.75rem 1.5rem;
@@ -455,6 +516,8 @@
     /* Contact */
     .Contact__button {
         width: 100%; 
-      
+    }
+    .Contact {
+      border-top-left-radius:0;
     }
   }    
